@@ -17,7 +17,7 @@ services:
       - PGADMIN_DEFAULT_EMAIL=gabriel@gabriel.com
       - PGADMIN_DEFAULT_PASSWORD=${POSTGRES_PASSWORD}
     ports:
-      - "5050:5050"
+      - "5050:80"
   n8n:
     container_name: n8n_container
     image: docker.n8n.io/n8nio/n8n
