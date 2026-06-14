@@ -14,8 +14,8 @@ services:
     image: dpage/pgadmin4
     restart: always
     environment:
-      PGADMIN_DEFAULT_EMAIL=gabriel@gabriel.com
-      PGADMIN_DEFAULT_PASSWORD=${POSTGRES_PASSWORD}
+      - PGADMIN_DEFAULT_EMAIL=gabriel@gabriel.com
+      - PGADMIN_DEFAULT_PASSWORD=${POSTGRES_PASSWORD}
     ports:
       - "5050:5050"
   n8n:
